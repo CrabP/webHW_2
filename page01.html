@@ -1,0 +1,128 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" type="text/javascript" src="Work01.js"></script>
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  
+  <script language="javascript" type="text/javascript">
+    function right_onMouseOver(){
+      right.style.opacity="0.8";
+      right.style.width="110px";
+      right.style.right="-5px";
+    }
+    function right_onMouseOut(){
+      right.style.opacity="0.5";
+      right.style.width="100px";
+      right.style.right="0%";
+    }
+    function left_onMouseOver(){
+      left.style.opacity="0.8";
+      left.style.width="110px";
+      left.style.left="-5px";
+    }
+    function left_onMouseOut(){
+      left.style.opacity="0.5";
+      left.style.width="100px";
+      left.style.left="0%";
+    }
+
+  
+  </script>
+
+  <!-- This line removes any default padding and style. 
+       You might only need one of these values set. -->
+  <style>
+    *{
+      font-size:120%;
+      font-family:sans-serif;
+      text-align: center;
+    }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0; margin: 0;
+      overflow:hidden
+    }
+    .section{
+      width:300%;
+      height:100%;
+      white-space:nowrap;
+
+    }
+    
+    .column {
+      padding: 0; margin: 0;
+      float:left;
+      width:100%;
+      height:100%;
+      overflow:hidden;
+      
+    }
+    .arrow{
+      position:fixed;
+      width:100px;
+      top:50%;
+      transform:translateY(-50%);
+      opacity:0.5;
+      cursor: pointer;
+    }
+    #processing{
+      position:fixed;
+      top:50%;
+      right:51%;
+      transform:translateY(-50%);
+    }
+    #exp{
+      position:fixed;
+      display: inline;
+      widith:500px;
+      height:600px;
+      background-color:#ffe8bd;
+      top:50%;
+      left:51%;
+      transform:translateY(-50%);
+    }
+    #left{
+      left:0%;
+    }
+    #right{
+      right:0%;
+    }
+    #info{
+      background-image: url("src/back1.jpg");
+      
+    }
+    #no1{
+      background-image: url("src/back2.jpg");
+      background-size: 100%;
+    }
+    #no2{
+      background-image: url("src/back1.jpg");
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+<div class="column" id="no1"><div id="processing"></div></div>
+
+<div id="exp">--------------------------------------<br>Bearded MonaLisa<br><br>모나리자의 중성적인 이미지를<br>생각해서 만든 작품이다.<br>마우스를 클릭해 밑으로 당겨보자
+</div>
+
+<a href="page02.html"><img onmouseover="right_onMouseOver()" onmouseout="right_onMouseOut()" class="arrow" id="right" src="src/right-arrow.png"/></a>
+<a href="index.html"><img onmouseover="left_onMouseOver()" onmouseout="left_onMouseOut()" class="arrow" id="left" src="src/left-arrow.png"/></a>
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>

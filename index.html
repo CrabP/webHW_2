@@ -1,0 +1,112 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+
+  <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
+  
+  <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
+  <script language="javascript" type="text/javascript">
+    function right_onMouseOver(){
+      right.style.opacity="0.8";
+      right.style.width="110px";
+      right.style.right="-5px";
+    }
+    function right_onMouseOut(){
+      right.style.opacity="0.5";
+      right.style.width="100px";
+      right.style.right="0%";
+    }
+    function left_onMouseOver(){
+      left.style.opacity="0.8";
+      left.style.width="110px";
+      left.style.left="-5px";
+    }
+    function left_onMouseOut(){
+      left.style.opacity="0.5";
+      left.style.width="100px";
+      left.style.left="0%";
+    }
+
+  
+  </script>
+
+  <!-- This line removes any default padding and style. 
+       You might only need one of these values set. -->
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      padding: 0; margin: 0;
+    }
+    .section{
+      width:300%;
+      height:100%;
+      white-space:nowrap;
+
+    }
+    
+    .column {
+      padding: 0; margin: 0;
+      float:left;
+      width:33.33333%;
+      height:100%;
+      overflow:hidden;
+      
+    }
+    .arrow{
+      position:fixed;
+      width:100px;
+      top:50%;
+      transform:translateY(-50%);
+      opacity:0.5;
+      cursor: pointer;
+    }
+    #name{
+      position:fixed;
+      top:50%;
+      transform:translateY(-50%);
+      left:10%;
+    }
+    #left{
+      left:0%;
+    }
+    #right{
+      right:0%;
+    }
+    #info{
+      background-image: url("src/back1.jpg");
+      
+    }
+    #no1{
+      background-image: url("src/back2.jpg");
+      background-size: 100%;
+    }
+    #no2{
+      background-image: url("src/back1.jpg");
+    }
+    #processing02{
+      position:relative;
+      margin-top:50px;
+      left:50%;
+    }
+
+
+  </style>
+
+</head>
+
+<body>
+
+
+<a href="page01.html"><img onmouseover="right_onMouseOver()" onmouseout="right_onMouseOut()" class="arrow" id="right" src="src/right-arrow.png"/></a>
+
+<div class="section" id"sec">
+<div class="column" id="info"></div>
+<div class="column" id="no1"></div>
+<div class="column" id="no2"><div id="processing02"></div></div>
+
+</div>
+
+<img id="name" src="src/name.png"/>
+
+</body>
+</html>
